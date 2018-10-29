@@ -1,0 +1,69 @@
+/*!
+ * Start Bootstrap - Scrolling Nav (https://startbootstrap.com/template-overviews/scrolling-nav)
+ * Copyright 2013-2017 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-scrolling-nav/blob/master/LICENSE)
+ */
+.navbar-dark .navbar-nav .nav-link{
+  color: transparent;
+  text-shadow: 0 0 0 #ff0018;
+  font-size: 2rem;
+  transition: all .2s ease
+}
+.navbar-dark .navbar-nav .nav-link:hover,
+.navbar-dark .navbar-nav .nav-link.active{
+  color: #ffa500;
+  text-shadow: none;
+}
+
+header {
+  padding: 20vh 0;
+  min-height: 100vh;
+}
+
+.bg-dark{
+  background: #000!important
+}
+
+.special-note{
+  font-size: .4rem;
+  margin-top: 2rem;
+  font-style: italic;
+}
+
+.bg-dark h1{
+  color:#f00;
+  font-size: 13rem;
+  font-family: 'Amatic SC', cursive;
+}
+.bg-dark .lead{
+  font-size: 2rem;
+  font-family: 'Pacifico', cursive;
+}
+
+section {
+  min-height: 100vh;
+  background: #000;
+  padding: 20vh 10vw;
+  text-align: center;
+}
+
+section audio{
+  width: 60vw;
+  margin: 1rem auto;
+}
+
+section h2{
+  font-family: 'Amatic SC', cursive;
+  font-size: 4rem
+}
+
+section h2, section p{
+  color:#fff!important
+}
+
+.bg-light {
+   background-color: #fff!important;
+}
+section.bg-light h2, section.bg-light p{
+  color:#333!important
+}
