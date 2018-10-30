@@ -33,8 +33,15 @@ header {
 .bg-dark h1{
   color:#f00;
   font-size: 13rem;
-  font-family: 'Amatic SC', cursive;
+  font-family: 'Amatic SC', cursive; 
 }
+
+@media only screen and (max-width: 600px){
+  .bg-dark h1 {
+    font-size: 6rem;
+  }
+}
+
 .bg-dark .lead{
   font-size: 2rem;
   font-family: 'Pacifico', cursive;
@@ -59,6 +66,10 @@ section h2{
 
 section h2, section p{
   color:#fff!important
+}
+
+section img{
+  max-width:100%
 }
 
 .bg-light {
