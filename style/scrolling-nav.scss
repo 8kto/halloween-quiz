@@ -1,0 +1,124 @@
+.navbar-dark .navbar-nav .nav-link {
+    color: transparent;
+    text-shadow: 0 0 0 #ff0018;
+    font-size: 2rem;
+    transition: all 0.2s ease;
+    &:hover, &.active {
+        color: #ffa500;
+        text-shadow: none;
+    }
+}
+
+header {
+    padding: 20vh 0;
+    min-height: 100vh;
+}
+
+.bg-dark {
+    background: #000 !important;
+}
+
+.special-note {
+    font-size: .4rem;
+    margin-top: 2rem;
+    font-style: italic;
+}
+
+.bg-dark {
+    h1 {
+        color: #f00;
+        font-size: 13rem;
+        font-family: 'Amatic SC', cursive;
+    }
+    .lead {
+        font-size: 2rem;
+        font-family: 'Pacifico', cursive;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .bg-dark h1 {
+        font-size: 6rem;
+    }
+}
+
+section {
+    min-height: 100vh;
+    background: #000;
+    padding: 20vh 10vw;
+    text-align: center;
+    audio {
+        width: 100%;
+        margin: 4rem auto 0;
+    }
+    h2 {
+        font-family: 'Amatic SC', cursive;
+        font-size: 4rem;
+        color: #fff !important;
+    }
+    p {
+        color: #fff !important;
+    }
+    img {
+        max-width: 100%;
+    }
+
+    label {
+        color: #fff;
+    }
+}
+
+.bg-light {
+    background-color: #fff !important;
+}
+
+section.bg-light {
+    h2, p {
+        color: #333 !important;
+    }
+    label {
+        color: #333;
+    }
+}
+
+.no-inputs .form-group-answer-input {
+    display: none;
+}
+
+.form-group-answer-input {
+    margin-top: 1rem;
+
+    label {
+        font-weight: bold;
+    }
+
+    .form-control {
+        border: 2px solid;
+
+        &:focus {
+            color: inherit;
+            border-color: inherit;
+            outline: 0;
+            box-shadow: none;
+        }
+
+        &.valid {
+            border-color: green
+        }
+        &.invalid {
+            border-color: red
+        }
+    }
+
+    .form-control-feedback {
+        font-weight: bold;
+        display: none;
+        text-align: left;
+        margin: .5rem 0;
+        color: green;
+    }
+
+    .form-control.valid + .form-control-feedback {
+        display: block;
+    }
+}
