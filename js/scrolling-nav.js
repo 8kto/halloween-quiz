@@ -31,6 +31,19 @@
         $('html.no-inputs').removeClass('no-inputs');
     }
 
+    // Force play only one audio per time
+    const audios = $('audio');
+    audios.on('play', function () {
+        const self = this;
+
+        audios.not(this).each(function () {
+            console.log(this);
+            this.pause();
+        });
+
+        self.play();
+    });
+
     /**
      *
      * @param {RegExp} trackName
